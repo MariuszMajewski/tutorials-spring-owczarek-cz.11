@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="someBean" class="pl.mrmario.tutorials.spring.owczarek.cz11.SomeBean">
+		<constructor-arg>
+			<list>
+				<value>Jeden</value>
+				<value>Dwa</value>
+				<value>Trzy</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg >
+			<set>
+				<value>1</value>
+				<value>4</value>
+				<value>6</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg >
+			<array>
+				<value>5</value>
+				<value>5</value>
+				<value>5</value>
+			</array>
+		
+		</constructor-arg>
+	</bean>
+
+</beans>
